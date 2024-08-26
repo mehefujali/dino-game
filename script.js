@@ -91,7 +91,7 @@ function gameLoop() {
     drawObstacles();
 
     if (detectCollision()) {
-
+        alert(`Game Over! Your score: ${score}`);
         document.location.reload();
     }
 
