@@ -11,7 +11,7 @@ const OBSTACLE_SPEED = 5;
 
 let dinoImage = new Image();
 let obstacleImage = new Image();
-dinoImage.src = './assets/pngtree-dinosaur-tyrannosaurus-illustration-png-image_6659086.png';
+dinoImage.src = './assets/jv.jpg';
 obstacleImage.src = './assets/caxtus.png';
 
 let dino = {
