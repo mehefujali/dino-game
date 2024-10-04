@@ -91,7 +91,7 @@ function gameLoop() {
     drawObstacles();
 
     if (detectCollision()) {
-        alert(`Game Over! Your score: ${score}`);
+        // alert(`Game Over! Your score: ${score}`);
         document.location.reload();
     }
 
@@ -103,6 +103,17 @@ function gameLoop() {
 
     requestAnimationFrame(gameLoop);
 }
+
+let jump = false
+
+document.getElementById('jump').addEventListener('click', function () {
+    jump = true
+    if (jump === true && !dino.jumping) {
+        dino.velocityY = JUMP_STRENGTH;
+        dino.jumping = true;
+    }
+
+})
 
 document.addEventListener('keydown', function (event) {
     if (event.code === 'Space' && !dino.jumping) {
